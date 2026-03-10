@@ -25,6 +25,10 @@ I compared standard **L2 Pixel Regression** against the **"3-Bit Color" Classifi
 | **Mean PSNR** | **19.19** | 15.93 |
 | **Mean SSIM** | **0.61** | 0.46 |
 
+<img width="426" height="157" alt="image" src="https://github.com/user-attachments/assets/dcae5e2d-4610-497d-a169-431c7e4fbc16" />
+<img width="424" height="143" alt="image" src="https://github.com/user-attachments/assets/cec03868-dfbc-4726-a6ca-bfdda3356918" />
+
+
 **Key Takeaways:**
 * **Metric Bias:** PSNR is mathematically derived from Mean Squared Error (MSE). Because the L2 model was trained using MSE loss, it was inherently optimized to win this metric.
 * **The SSIM Penalty:** Structural Similarity (SSIM) measures edges and textures. The 3-bit decoder fills missing patches with solid, flat blocks of color, destroying the internal "structure" of the patch and tanking the SSIM score.
